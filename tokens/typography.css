@@ -1,0 +1,177 @@
+/* Real Estate Design System - Typography */
+
+/* Font Families */
+:root {
+  --font-sans: "Roboto Flex", system-ui, sans-serif;
+  --font-ios: "DM Sans", system-ui, sans-serif;
+  --font-android: "DM Serif Text", Georgia, serif;
+}
+
+/* Typography Styles */
+/* Heading */
+.heading-5xl {
+  font-family: var(--font-sans);
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-4xl {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-3xl {
+  font-family: var(--font-sans);
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-2xl {
+  font-family: var(--font-sans);
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-xl {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-l {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.heading-m {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.heading-s {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.heading-xs {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.heading-2xs {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/* Text */
+.text-2xl {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.text-xl {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.text-l {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.text-m {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.text-s {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.text-xs {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+/* Link */
+.link-l {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.link-m {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.link-s {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+/* Label */
+.label-l {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.label-m {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.label-s {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+

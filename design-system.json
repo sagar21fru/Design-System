@@ -1,0 +1,32 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-09-23T18:03:55.767Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [
+    "Other"
+  ],
+  "layout": "files",
+  "libraries": [],
+  "sections": {},
+  "title": "Real Estate",
+  "namespace": "RealEstate",
+  "lastChange": {
+    "by": "Sagar",
+    "at": "2026-09-23T18:08:07Z",
+    "via": "Cowork \u00b7 Figma variables export",
+    "note": "First draft from 7 Figma variable collections: 98 colors, 22 type styles, spacing, radius, borders, breakpoints"
+  }
+}
