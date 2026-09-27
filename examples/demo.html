@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Design System - Demo</title>
+
+    <!-- Design System Tokens -->
+    <link rel="stylesheet" href="../tokens/all-tokens.css">
+    <link rel="stylesheet" href="components/components.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-neutral-primary);
+            color: var(--text-neutral-disabled);
+            line-height: 1.6;
+        }
+
+        section {
+            padding: var(--space-4xl) 0;
+        }
+
+        .section-header {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .component-showcase {
+            background: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius-m);
+            margin-bottom: var(--space-l);
+        }
+
+        .showcase-title {
+            color: var(--text-neutral-disabled);
+            margin-bottom: var(--space-m);
+            padding-bottom: var(--space-s);
+            border-bottom: 2px solid var(--bg-brand-primary);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">Real Estate</a>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#" class="nav-link">Properties</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="heading-5xl hero-title">Find Your Dream Home</h1>
+        <p class="text-xl hero-subtitle">Discover the perfect property from our curated collection of premium real estate listings</p>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search by location, property type, or price...">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+
+    <!-- Components Showcase -->
+    <section>
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="heading-3xl">Design System Components</h2>
+                <p class="text-l" style="color: var(--text-neutral-tertiary); margin-top: var(--space-m);">
+                    A showcase of all available components in the Real Estate Design System
+                </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Buttons</h3>
+                <div class="flex gap-l" style="flex-wrap: wrap;">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Disabled</button>
+                </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Badges</h3>
+                <div class="flex gap-l" style="flex-wrap: wrap; align-items: center;">
+                    <span class="badge badge-success">Available</span>
+                    <span class="badge badge-error">Sold</span>
+                    <span class="badge badge-warning">Pending</span>
+                    <span class="badge badge-info">New Listing</span>
+                </div>
+            </div>
+
+            <!-- Alerts -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Alerts</h3>
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Your property listing has been published.
+                </div>
+                <div class="alert alert-error">
+                    <strong>Error!</strong> Unable to process your request. Please try again.
+                </div>
+                <div class="alert alert-warning">
+                    <strong>Warning!</strong> Your listing will expire in 3 days.
+                </div>
+                <div class="alert alert-info">
+                    <strong>Info:</strong> New properties matching your criteria are available.
+                </div>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Form Elements</h3>
+                <div style="max-width: 500px;">
+                    <div class="input-group">
+                        <label class="input-label">Property Name</label>
+                        <input type="text" class="input" placeholder="Enter property name">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Property Type</label>
+                        <select class="select">
+                            <option>Select property type</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                            <option>Townhouse</option>
+                            <option>Penthouse</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Description</label>
+                        <textarea class="input" rows="4" placeholder="Enter property description"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Typography</h3>
+                <h1 class="heading-5xl" style="margin-bottom: var(--space-s);">Heading 5XL</h1>
+                <h2 class="heading-4xl" style="margin-bottom: var(--space-s);">Heading 4XL</h2>
+                <h3 class="heading-3xl" style="margin-bottom: var(--space-s);">Heading 3XL</h3>
+                <h4 class="heading-2xl" style="margin-bottom: var(--space-s);">Heading 2XL</h4>
+                <h5 class="heading-xl" style="margin-bottom: var(--space-s);">Heading XL</h5>
+                <p class="text-xl" style="margin-top: var(--space-l);">
+                    Body text XL - Perfect for introductory paragraphs and important content that needs emphasis.
+                </p>
+                <p class="text-l" style="margin-top: var(--space-m);">
+                    Body text L - Ideal for main content and descriptions in property listings.
+                </p>
+                <p class="text-m" style="margin-top: var(--space-m);">
+                    Body text M - Standard body text for most content throughout the application.
+                </p>
+            </div>
+
+            <!-- Property Cards -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Property Cards</h3>
+                <div class="grid grid-3">
+                    <div class="property-card">
+                        <div class="property-image"></div>
+                        <div class="property-content">
+                            <div class="flex" style="justify-content: space-between; align-items: start;">
+                                <h4 class="heading-m property-price">AED 1,250,000</h4>
+                                <span class="badge badge-info">New</span>
+                            </div>
+                            <h3 class="heading-s">Luxury Marina Apartment</h3>
+                            <p class="property-location text-s">📍 Dubai Marina, Dubai</p>
+                            <div class="property-features">
+                                <span class="feature">🛏️ 3 Beds</span>
+                                <span class="feature">🛁 2 Baths</span>
+                                <span class="feature">📐 1,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-image"></div>
+                        <div class="property-content">
+                            <div class="flex" style="justify-content: space-between; align-items: start;">
+                                <h4 class="heading-m property-price">AED 3,500,000</h4>
+                                <span class="badge badge-success">Available</span>
+                            </div>
+                            <h3 class="heading-s">Modern Downtown Villa</h3>
+                            <p class="property-location text-s">📍 Downtown Dubai</p>
+                            <div class="property-features">
+                                <span class="feature">🛏️ 5 Beds</span>
+                                <span class="feature">🛁 4 Baths</span>
+                                <span class="feature">📐 3,200 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-image"></div>
+                        <div class="property-content">
+                            <div class="flex" style="justify-content: space-between; align-items: start;">
+                                <h4 class="heading-m property-price">AED 850,000</h4>
+                                <span class="badge badge-warning">Pending</span>
+                            </div>
+                            <h3 class="heading-s">Cozy Studio Apartment</h3>
+                            <p class="property-location text-s">📍 JBR, Dubai</p>
+                            <div class="property-features">
+                                <span class="feature">🛏️ Studio</span>
+                                <span class="feature">🛁 1 Bath</span>
+                                <span class="feature">📐 650 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Cards -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Standard Cards</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="heading-s card-title">Featured Listing</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-m">This premium property offers stunning views and modern amenities in the heart of the city.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-s">Posted 2 days ago</span>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="heading-s card-title">Trending Location</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-m">Dubai Marina is experiencing high demand with property values increasing by 15% this quarter.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-s">Market Update</span>
+                            <button class="btn btn-outline">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Palette -->
+            <div class="component-showcase">
+                <h3 class="heading-m showcase-title">Color Palette</h3>
+                <div>
+                    <h4 class="heading-s" style="margin-bottom: var(--space-m);">Brand Colors</h4>
+                    <div class="grid grid-4" style="margin-bottom: var(--space-xl);">
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--voilet-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Violet 500<br>#8657EA</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--teal-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Teal 500<br>#1E8678</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--neutral-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Neutral 500<br>#A0B1AF</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--voilet-900); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Violet 900<br>#3F2276</p>
+                        </div>
+                    </div>
+
+                    <h4 class="heading-s" style="margin-bottom: var(--space-m);">Status Colors</h4>
+                    <div class="grid grid-4">
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--green-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Success<br>#42A147</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--red-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Error<br>#E53836</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--yellow-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Warning<br>#FCD936</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="height: 80px; background: var(--blue-500); border-radius: var(--radius-s); margin-bottom: var(--space-s);"></div>
+                            <p class="text-s">Info<br>#1F87E5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-neutral-inverse-primary); color: white; padding: var(--space-2xl); text-align: center;">
+        <p class="text-m" style="color: var(--text-neutral-inverse-secondary);">
+            Real Estate Design System © 2026 |
+            <a href="https://github.com/sagar21fru/Design-System" style="color: var(--text-brand-inverse);">View on GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
